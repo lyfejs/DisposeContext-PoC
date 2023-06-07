@@ -1,0 +1,41 @@
+{
+  "name": "dispose-context",
+  "version": "0.0.0",
+  "description": "Declarative resource management",
+  "main": "./dist/commonjs/index.js",
+  "types": "./dist/commonjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/esm/index.js",
+        "types": "./dist/esm/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/commonjs/index.js",
+        "types": "./dist/commonjs/index.d.ts"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyfejs/DisposeContext-PoC.git"
+  },
+  "keywords": [
+    "DisposeContext",
+    "resource",
+    "management",
+    "async",
+    "await",
+    "promise"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lyfejs/DisposeContext-PoC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
